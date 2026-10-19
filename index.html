@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mohamed Arafath T — Software Engineer</title>
+<meta name="description" content="Mohamed Arafath T, B.Tech Information Technology. Databases, search infrastructure, RAG and security tooling. St. Peter's College of Engineering and Technology, expected May 2028. Open to SDE internships.">
+<meta property="og:title" content="Mohamed Arafath T — Software Engineer"><meta property="og:description" content="Databases, search infrastructure, RAG and security tooling. B.Tech IT, expected May 2028."><meta property="og:type" content="profile"><meta name="theme-color" content="#020203">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23020203'/%3E%3Ccircle cx='32' cy='32' r='7' fill='%23f2b25e'/%3E%3Ccircle cx='14' cy='18' r='3' fill='%23f1f1ec'/%3E%3Ccircle cx='50' cy='20' r='3' fill='%23f1f1ec'/%3E%3Ccircle cx='46' cy='48' r='3' fill='%23f1f1ec'/%3E%3C/svg%3E">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Mohamed Arafath T","jobTitle":"Software Engineering Student","alumniOf":"St. Peter's College of Engineering and Technology","address":{"@type":"PostalAddress","addressLocality":"Chennai","addressCountry":"IN"},"email":"mailto:mdarafath202006@gmail.com","sameAs":["https://github.com/mdarafath202006-tech","https://www.linkedin.com/in/mohamed-arafath-t-4b7b49359/"]}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+:root{--bg:#020203;--fg:#f1f1ec;--mut:#8f8f8a;--ln:rgba(255,255,255,.14);--am:#f2b25e;--d:'Archivo','Helvetica Neue',Arial,sans-serif;--m:'JetBrains Mono',ui-monospace,Menlo,monospace}
+html{background:var(--bg);scroll-behavior:smooth}
+body{color:var(--fg);font:400 1rem/1.65 var(--d);overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body.fine,body.fine *{cursor:none}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--fg);outline-offset:4px}
+#cv{position:fixed;inset:0;width:100%;height:100%;z-index:0}
+.vig{position:fixed;inset:0;z-index:5;pointer-events:none;background:radial-gradient(ellipse at center,transparent 45%,rgba(0,0,0,.8))}
+.grain{position:fixed;inset:-50%;z-index:6;pointer-events:none;opacity:.06;animation:gr 1s steps(6) infinite;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence baseFrequency='.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
+@keyframes gr{0%{transform:translate(0,0)}25%{transform:translate(-6%,4%)}50%{transform:translate(5%,-7%)}75%{transform:translate(-4%,-3%)}100%{transform:translate(0,0)}}
+main,nav,#hud{position:relative;z-index:10}
+#bar{position:fixed;top:0;left:0;right:0;height:2px;background:var(--fg);transform-origin:0 50%;transform:scaleX(0);z-index:60}
+nav{position:fixed;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:1.5rem clamp(1.25rem,4vw,3.5rem);font:500 .72rem var(--m);letter-spacing:.08em;z-index:50;mix-blend-mode:difference}
+nav div{display:flex;gap:1.8rem}nav a{text-decoration:none}nav a:hover{opacity:.6}
+#hud{position:fixed;right:clamp(1.25rem,4vw,3.5rem);bottom:1.5rem;font:500 .68rem var(--m);letter-spacing:.06em;text-align:right;z-index:50;line-height:1.7}
+#hud i{font-style:normal;color:var(--mut);display:block}
+#hud b{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--am);margin-right:.5rem;animation:pu 2s infinite}
+@keyframes pu{50%{opacity:.25}}
+#cur{position:fixed;left:0;top:0;width:8px;height:8px;margin:-4px 0 0 -4px;border-radius:50%;background:#fff;mix-blend-mode:difference;z-index:200;pointer-events:none;display:none;place-items:center;transition:width .35s cubic-bezier(.16,1,.3,1),height .35s cubic-bezier(.16,1,.3,1),margin .35s cubic-bezier(.16,1,.3,1),background .2s}
+.fine #cur{display:grid}
+#cur span{font:500 .58rem var(--m);letter-spacing:.1em;color:#fff;opacity:0;transition:opacity .2s;white-space:nowrap}
+#cur.on{width:84px;height:84px;margin:-42px 0 0 -42px;background:transparent;border:1px solid #fff}
+#cur.on span{opacity:1}
+#ld{position:fixed;inset:0;z-index:300;background:#000;display:grid;place-items:center;align-content:center;gap:1.6rem;transition:opacity .7s}
+#ld.d{opacity:0;pointer-events:none}
+#ld div{display:flex;gap:10px}#ld i{width:6px;height:6px;border-radius:50%;background:#333;transition:background .2s,box-shadow .2s}
+#ld i.l{background:#fff;box-shadow:0 0 12px #fff}
+#ld p{font:500 .68rem var(--m);letter-spacing:.2em;color:#999}
+#top{min-height:100vh;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:6rem clamp(1.25rem,5vw,4rem) 5rem;position:relative}
+.pw{perspective:900px}
+#hin{transform-style:preserve-3d;max-width:1200px}
+.lbl{font:500 .72rem/1.6 var(--m);letter-spacing:.06em;color:var(--mut);margin-bottom:1.2rem}
+.mega{font:800 clamp(3.2rem,13vw,13rem)/.84 var(--d);font-stretch:76%;text-transform:uppercase;letter-spacing:-.015em}
+.mega span{display:block}
+.ol{color:transparent;-webkit-text-stroke:1.5px var(--fg)}
+.lede{margin:2rem 0 2.2rem;max-width:46ch;font-size:clamp(1.05rem,1.8vw,1.4rem);font-weight:300;color:#d6d6d1;line-height:1.5}
+.cta{display:flex;gap:1rem;flex-wrap:wrap}
+.hint{position:absolute;left:clamp(1.25rem,5vw,4rem);bottom:1.5rem;font:500 .68rem var(--m);letter-spacing:.06em;color:var(--mut)}
+.ready #top .mega span{animation:in 1.5s cubic-bezier(.16,1,.3,1) backwards}
+.ready #top .mega span+span{animation-delay:.12s}
+@keyframes in{from{opacity:0;transform:translateZ(-700px) scale(.85);filter:blur(12px)}}
+.mag{display:inline-block;font:500 .78rem var(--m);letter-spacing:.06em;text-decoration:none;padding:.9rem 1.5rem;border:1px solid var(--ln);border-radius:100px;color:var(--fg);background:rgba(2,2,3,.4);transition:transform .35s cubic-bezier(.16,1,.3,1),background .3s,color .3s}
+.mag:hover,.mag.f{background:var(--fg);color:#000}
+.mag.f:hover{background:transparent;color:var(--fg)}
+#dist{background:linear-gradient(rgba(2,2,3,0),rgba(2,2,3,.36) 220px,rgba(2,2,3,.36) calc(100% - 220px),rgba(2,2,3,0));padding:6rem 0}
+.wrap{max-width:1180px;margin:0 auto;padding:5rem clamp(1.25rem,5vw,4rem)}
+.t{font:800 clamp(2.4rem,6.5vw,5.2rem)/.95 var(--d);font-stretch:80%;letter-spacing:-.02em;margin-bottom:3rem}
+.two{display:grid;grid-template-columns:1fr 1.3fr;gap:clamp(2rem,6vw,6rem)}
+.two p{color:#cfcfca;font-size:1.08rem;max-width:60ch;font-weight:300}.two p+p{margin-top:1.2rem}
+.rows{margin-top:2rem;border-top:1px solid var(--ln)}
+.rows div{display:flex;gap:1.5rem;padding:.9rem 0;border-bottom:1px solid var(--ln);font-size:.95rem}
+.rows b{flex:0 0 9rem;font-weight:600}.rows span,.rows a{color:#b9b9b4}
+.work{border-bottom:1px solid var(--ln)}
+.pj{border-top:1px solid var(--ln);transition:opacity .4s,border-color .4s}
+.work:hover .pj:not(:hover){opacity:.4}.pj:hover,.pj[open]{border-color:var(--fg)}
+.pj summary{display:grid;grid-template-columns:3rem 1fr 2rem;gap:1.2rem;padding:2.2rem 0;list-style:none}
+.pj summary::-webkit-details-marker{display:none}
+.pj .n{font:500 .72rem var(--m);color:var(--mut);padding-top:.8rem}
+.pj h3{font:800 clamp(1.8rem,3.8vw,3rem)/1 var(--d);font-stretch:82%;letter-spacing:-.015em;transition:transform .5s cubic-bezier(.16,1,.3,1)}
+.pj summary:hover h3{transform:translateX(12px)}
+.pj .kd{font:500 .72rem var(--m);color:var(--am);margin:.5rem 0 .7rem;letter-spacing:.04em}
+.pj .sm{color:#bdbdb8;max-width:62ch;font-weight:300}
+.pj .pl{font:300 1.8rem/1 var(--m);color:var(--mut);transition:transform .4s}.pj[open] .pl{transform:rotate(45deg)}
+.pj .bd{padding:0 0 2.4rem 4.2rem;display:grid;gap:1.4rem;justify-items:start}
+.pj ul{list-style:none;display:grid;gap:.5rem;max-width:62ch}
+.pj li{padding-left:1.4rem;position:relative;color:#d4d4cf}.pj li::before{content:'';position:absolute;left:0;top:.75em;width:.7rem;height:1px;background:var(--am)}
+.pj .tg{font:400 .72rem/1.7 var(--m);color:var(--mut)}
+.sk{border-bottom:1px solid var(--ln)}
+.sk>div{display:grid;grid-template-columns:11rem 1fr;gap:2rem;padding:1.15rem 0;border-top:1px solid var(--ln)}
+.sk h3{font:500 .74rem var(--m);color:var(--mut);letter-spacing:.04em;padding-top:.25rem}.sk p{color:#d4d4cf}
+.pr{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--ln);border:1px solid var(--ln)}
+.pr div{background:rgba(2,2,3,.92);padding:2.2rem}
+.pr h3{font:700 1.4rem/1.2 var(--d);font-stretch:85%;margin-bottom:.7rem}.pr p{color:var(--mut);font-size:.95rem}
+#contact{min-height:100vh;display:grid;align-content:center;justify-items:start;padding:8rem clamp(1.25rem,5vw,4rem) 3rem}
+#contact .lede{margin:2rem 0 1.8rem}
+footer{margin-top:5rem;font:400 .66rem var(--m);color:#666;letter-spacing:.08em}
+@media(max-width:820px){.mega{font-size:min(16vw,7rem)}.two,.pr{grid-template-columns:1fr}.pj summary{grid-template-columns:2rem 1fr 1.5rem}.pj .bd{padding-left:0}.hm{display:none}.rows b{flex-basis:7rem}.sk>div{grid-template-columns:1fr;gap:.4rem}.hint{bottom:3.6rem}#hud{bottom:1rem}}
+.rm .grain{animation:none}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="ld"><div id="dots"></div><p>BRINGING NODES ONLINE <b id="pc">00</b></p></div>
+<div id="bar"></div>
+<canvas id="cv" aria-hidden="true"></canvas>
+<div class="vig"></div><div class="grain"></div>
+<div id="cur"><span></span></div>
+<nav><a href="#top">Arafath T</a><div><a href="#work" class="hm">Work</a><a href="#stack" class="hm">Stack</a><a href="#about" class="hm">About</a><a href="#contact">Contact</a></div></nav>
+<div id="hud"><span><b></b><span id="hl">0/0 nodes healthy</span></span><i id="st">01 HOME 000%</i></div>
+
+<main>
+<section id="top">
+  <div class="pw"><div id="hin">
+    <p class="lbl">B.Tech Information Technology, expected May 2028. Open to SDE internships.</p>
+    <h1 class="mega"><span>Mohamed</span><span class="ol">Arafath T</span></h1>
+    <p class="lede">I build distributed systems, AI retrieval pipelines and security tooling, and I design them to keep working when parts of them fail.</p>
+    <div class="cta"><a class="mag f" href="#work">View projects</a><a class="mag" href="resume.html" target="_blank" rel="noopener">Résumé</a><a class="mag" href="https://github.com/mdarafath202006-tech" target="_blank" rel="noopener">GitHub</a><button class="mag" id="chaos" type="button" aria-label="Fail a random node in the background cluster">Fail a node</button></div>
+  </div></div>
+  <p class="hint">Click any node, even the leader, to fail it. Watch the cluster recover.</p>
+</section>
+
+<div id="dist">
+<section id="about" class="wrap"><div class="two">
+  <div><p class="lbl">About</p><h2 class="t" style="margin:0">Systems that survive their own failures.</h2></div>
+  <div><p>I'm a B.Tech Information Technology student who builds systems rather than demos. My projects span distributed search, vector retrieval, database internals, network-security compliance and offline-first location tracking.</p>
+  <p>I care about correctness under failure, predictable latency and explicit trade-offs. I write the decision down first, then build to it.</p>
+  <div class="rows"><div><b>Studying</b><span>B.Tech, Information Technology, St. Peter's College of Engineering and Technology, Chennai</span></div><div><b>Focus</b><span>Distributed systems, AI retrieval, security engineering</span></div><div><b>Looking for</b><span>SDE internships, then new-grad software engineer roles</span></div></div></div>
+</div></section>
+
+<section id="work" class="wrap"><p class="lbl">Selected work</p><h2 class="t">Six systems.<br>Zero shortcuts.</h2><div class="work" id="pj"></div></section>
+
+<section id="stack" class="wrap"><p class="lbl">Technical stack</p><h2 class="t">What I build<br>with.</h2>
+<div class="sk">
+<div><h3>Languages</h3><p>Python, SQL, JavaScript, TypeScript, Bash</p></div>
+<div><h3>Backend</h3><p>FastAPI, Flask, REST APIs, microservices, gRPC, JWT authentication, WebSockets, Socket.IO</p></div>
+<div><h3>Databases</h3><p>PostgreSQL, MySQL, SQLite, Redis, vector databases</p></div>
+<div><h3>AI / ML</h3><p>Machine learning, NLP, LLM applications, RAG, embeddings, vector search, recommendation systems</p></div>
+<div><h3>Systems</h3><p>Distributed systems, database internals, search infrastructure, system design, WAL, indexing</p></div>
+<div><h3>Cloud and DevOps</h3><p>Azure AI Foundry, Docker, CI/CD, Linux, Git, GitHub Actions, pytest</p></div>
+<div><h3>CS foundations</h3><p>Data structures and algorithms, operating systems, computer networks, DBMS</p></div>
+</div></section>
+
+<section id="approach" class="wrap"><p class="lbl">Engineering approach</p><h2 class="t">How I think<br>about systems.</h2>
+<div class="pr">
+<div><h3>Design for failure</h3><p>Fallback paths come before happy paths. Failure is the baseline assumption, which is why the background of this page loses nodes on purpose.</p></div>
+<div><h3>Latency is a feature</h3><p>Response time is part of the user contract, so indexes, caches and query paths are designed around it.</p></div>
+<div><h3>Intelligence needs infrastructure</h3><p>Retrieval precision and model accuracy collapse without disciplined data pipelines underneath.</p></div>
+<div><h3>Make trade-offs explicit</h3><p>Choose consistency or availability on purpose, and document why the team made that call.</p></div>
+</div></section>
+
+<section id="profile" class="wrap"><div class="two">
+  <div><p class="lbl">Profile</p><h2 class="t" style="margin:0">Education and credentials.</h2></div>
+  <div><div class="rows" id="pf" style="margin-top:0"></div></div>
+</div></section>
+</div>
+
+<section id="contact">
+  <p class="lbl">Contact</p>
+  <h2 class="mega"><span>Let's build</span><span class="ol">something reliable.</span></h2>
+  <p class="lede">Open to SDE internships and new-grad roles. Email is the fastest way to reach me.</p>
+  <div class="cta">
+    <a class="mag f" href="mailto:mdarafath202006@gmail.com">mdarafath202006@gmail.com</a>
+    <a class="mag" href="https://www.linkedin.com/in/mohamed-arafath-t-4b7b49359/" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="mag" href="https://github.com/mdarafath202006-tech" target="_blank" rel="noopener">GitHub</a>
+    <a class="mag" href="resume.html" target="_blank" rel="noopener">Résumé</a>
+  </div>
+  <footer>© 2026 Mohamed Arafath T</footer>
+</section>
+</main>
+
+<script>
+(()=>{
+/* ───── EDIT ME: optional profile details. Empty fields stay hidden. ───── */
+const ME={college:"St. Peter's College of Engineering and Technology, Chennai",years:'Expected May 2028',cgpa:'',links:[/* ['LeetCode','https://leetcode.com/u/you'] */],certs:['Microsoft Virtual Training Day: Build Agentic AI Solutions with Azure AI Foundry'],wins:[]};
+const G='https://github.com/mdarafath202006-tech';
+const PJ=[
+// [name, kind, summary, bullets, tags, repoUrl ('' = no public code yet), button label, extra line]
+['Retrivix','Search infrastructure engine','A search engine built from scratch: document ingestion, tokenization, inverted index construction and top-K ranked retrieval with BM25 scoring.',['Full pipeline from ingestion and tokenization to inverted index construction and top-K retrieval across multi-document corpora','BM25 relevance scoring with TF-IDF weighting and positional indexing, using index-aware lookups for sub-linear query times','Write (ingest) and read (query) paths decoupled, modeled on Apache Lucene and Elasticsearch internals'],'Python, inverted index, BM25, information retrieval','','','Source code is being prepared for release.'],
+['Loreva','RAG-powered knowledge platform','A retrieval-augmented generation backend: embeddings and vector search find the right passages before the LLM answers.',['FastAPI backend integrating embedding models and a vector store for semantic retrieval across large knowledge corpora','Context-aware pipeline that chunks, embeds, retrieves and re-ranks passages before LLM synthesis, reducing hallucination surface area','Plugin architecture with hot-swappable LLM providers and embedding backends'],'Python, FastAPI, LLM, RAG, vector search',G+'/Loreva','View repository',''],
+['VirelyxDB','Custom database engine','A relational database engine written from scratch in Python, with B-Tree indexing, page-based storage and write-ahead logging for crash recovery.',['Custom B-Tree index, page-based storage and a query execution pipeline supporting CRUD operations','Write-ahead logging for crash recovery, ACID durability and data reconstruction after unplanned shutdowns','Pluggable storage layer separating logical and physical models, so replication and sharding can be added without core rewrites'],'Python, WAL, B-Tree indexing, storage engine',G+'/VirelyxDB','View repository',''],
+['Nexus-Comply AI','Multi-vendor network compliance platform','An AI-assisted compliance and risk platform that normalizes Cisco, Fortinet and Juniper configurations into one vendor-neutral security model, then audits it with deterministic rules.',['Ingests Cisco IOS/IOS-XE, Fortinet FortiOS and Juniper Junos configs, detects the vendor automatically and normalizes them into vendor-neutral security intents','Deterministic rules mapped to CIS, NIST, STIG and ISO metadata produce evidence-backed findings and contextual risk scores','Cross-device security graph, what-if risk simulation, admin-approved remediation (execution is simulated) and human-in-the-loop feedback','FastAPI and SQLAlchemy backend, React and TypeScript frontend, JWT auth with four RBAC roles, PDF audit reports','Built for Smart India Hackathon problem statement SIH26155'],'Cybersecurity, compliance automation, risk scoring, FastAPI, React, PostgreSQL',G+'/nexus-comply-ai','View repository','In the repo: Docker Compose setup, unit tests, API docs at /docs, MIT license, demo configs.'],
+['Locatrix','Resilient tracking for GNSS-denied environments','AI-powered tracking and communication that keeps working when GPS and internet connectivity are unavailable.',['Dead reckoning from accelerometer and gyroscope data','AI-assisted sensor fusion and drift correction to improve reliability','Bluetooth between devices and LoRa to a base station, with cloud sync once connectivity returns','Designed for lost-person searches, emergency response and remote-area operations'],'Sensor fusion, dead reckoning, LoRa, Bluetooth, offline-first','','','In development. Source code is being prepared for release.'],
+['AI CareerVerse','Career ecosystem for students and alumni','A full-stack Flask platform that connects students with alumni, mentors and opportunities, with seven Claude-powered career tools.',['Seven AI tools on the Anthropic Claude API: CareerGPT chat, resume analyzer with ATS scoring, resume builder, job-match engine, skill-gap analyzer, roadmap generator and interview coach','Mentorship and referral workflows with real-time Socket.IO notifications, company pages, job portal, knowledge base and an admin analytics dashboard','Flask and SQLAlchemy on PostgreSQL, with Redis rate limiting, CSRF protection, JWT and a skill-based alumni recommender','Seeded demo data: 32 users, 8 companies and 22 jobs'],'Python, Flask, PostgreSQL, Redis, Socket.IO, Claude API',G+'/aicareerverse','View repository','In the repo: Dockerfile and Compose, GitHub Actions CI, pytest suite, one-click Render deployment, MIT license.']];
+const $=s=>document.querySelector(s),R=Math.random,TAU=6.2832;
+const rm=matchMedia('(prefers-reduced-motion:reduce)').matches,fine=matchMedia('(hover:hover) and (pointer:fine)').matches;
+const clamp=(v,a=0,b=1)=>Math.min(b,Math.max(a,v)),sm=(a,b,v)=>{v=clamp((v-a)/(b-a));return v*v*(3-2*v)},lerp=(a,b,t)=>a+(b-a)*t;
+const B=document.body,cv=$('#cv'),c=cv.getContext('2d');
+$('#pj').innerHTML=PJ.map((p,i)=>`<details class="pj"${i?'':' open'}><summary><span class="n">0${i+1}</span><div><h3>${p[0]}</h3><p class="kd">${p[1]}</p><p class="sm">${p[2]}</p></div><span class="pl">+</span></summary><div class="bd"><ul>${p[3].map(x=>`<li>${x}</li>`).join('')}</ul><p class="tg">${p[4]}</p>${p[7]?`<p class="tg" style="color:var(--am)">${p[7]}</p>`:''}${p[5]?`<a class="mag f" href="${p[5]}" target="_blank" rel="noopener">${p[6]} ↗</a>`:''}</div></details>`).join('');
+const row=(k,v)=>`<div><b>${k}</b><span>${v}</span></div>`;
+$('#pf').innerHTML=row('Degree','B.Tech, Information Technology (in progress)')+[['College',ME.college],['Graduating',ME.years],['CGPA',ME.cgpa]].filter(x=>x[1]).map(x=>row(x[0],x[1])).join('')
+ +ME.links.map(([k,u])=>`<div><b>${k}</b><a href="${u}" target="_blank" rel="noopener">${u.replace(/^https?:\/\//,'')}</a></div>`).join('')
+ +[['Certifications',ME.certs],['Achievements',ME.wins]].filter(x=>x[1].length).map(([k,a])=>row(k,a.join('<br>'))).join('')
+ +row('Experience','Independent software engineering projects, 2023 to present')+row('Coursework','Data structures and algorithms, operating systems, DBMS, computer networks, software engineering');
+if('scrollRestoration'in history)history.scrollRestoration='manual';scrollTo(0,0);
+if(rm)B.classList.add('rm');if(fine)B.classList.add('fine');
+
+/* loader: nodes come online */
+const ld=$('#ld'),pc=$('#pc'),dots=$('#dots');dots.innerHTML='<i></i>'.repeat(10);
+if(rm){ld.remove();B.classList.add('ready')}else{
+ const T0=performance.now();setTimeout(()=>B.classList.add('ready'),1000);
+ (function L(n){const p=clamp((n-T0)/1400);pc.textContent=String(Math.round((1-Math.pow(1-p,2))*100)).padStart(2,'0');
+  [...dots.children].forEach((d,i)=>d.classList.toggle('l',i<p*10));
+  if(p<1)requestAnimationFrame(L);else{pc.textContent='100';ld.classList.add('d');setTimeout(()=>ld.remove(),800)}})(T0)}
+
+/* ───── the living cluster ───── */
+let W,H,F,dpr,small,S=[],nodes=[],edges=[],adj=[],pk=[],N=0;
+let t=0,last=0,boost=0,yaw=R()*TAU,d=1500,dim=1,mx=0,my=0,cmx=0,cmy=0,tx=-99,ty=-99,rr=0,hov=null,hudT=0,chaos=6+R()*4,lbl='',ui=false,sh=0,tick=0,pjs=[],emb=[],scA=0,scI=1,hpj=0,curStat='',leader=0,term=1,elect=.8;
+const Q={x:0,y:0,k:0,dz:0};let cyw=1,syw=0,cp=1,sp=0,hw=0,hh=0;
+function P(x,y,z){const x1=x*cyw-z*syw,z1=x*syw+z*cyw,y1=y*cp-z1*sp,z2=y*sp+z1*cp,dz=z2+d;Q.dz=dz;if(dz<50)return false;const k=F/dz;Q.k=k;Q.x=hw+x1*k;Q.y=hh+y1*k;return true}
+function mk(){const a=(R()*N)|0,b=adj[a][(R()*adj[a].length)|0];return{a,b,u:R(),v:.6+R()*.8}}
+function build(){
+ small=innerWidth<820;N=small?36:64;
+ nodes=Array.from({length:N},()=>{const a=R()*TAU,b=Math.acos(2*R()-1),r=240+R()*540;
+  return{x:r*Math.sin(b)*Math.cos(a),y:r*Math.cos(b)*.6,z:r*Math.sin(b)*Math.sin(a),ph:R()*TAU,del:R()*1.6,dead:0,rip:-9,sx:0,sy:0,k:1,dz:1,px:0,py:0,pz:0,v:false,on:0}});
+ edges=[];adj=nodes.map(()=>[]);const seen=new Set();
+ nodes.forEach((a,i)=>{nodes.map((b,j)=>[j,(a.x-b.x)**2+(a.y-b.y)**2+(a.z-b.z)**2]).filter(o=>o[0]!==i).sort((p,q)=>p[1]-q[1]).slice(0,3).forEach(([j])=>{const k=i<j?i+'-'+j:j+'-'+i;if(!seen.has(k)){seen.add(k);edges.push([i,j]);adj[i].push(j);adj[j].push(i)}})});
+ pk=Array.from({length:small?22:46},mk);emb=Array.from({length:72},(_,i)=>{const a=(i%5)*TAU/5+.4;return{x:Math.cos(a)*.55+(R()+R()-1)*.3,y:Math.sin(a)*.55+(R()+R()-1)*.3}})}
+const alive=n=>n.dead<=t;
+function cache(){S=['top','about','work','stack','approach','profile','contact'].map(id=>document.getElementById(id).getBoundingClientRect().top+scrollY);pjs=[...document.querySelectorAll('.pj')].map(e=>{const r=e.getBoundingClientRect();return r.top+scrollY+r.height/2})}
+function size(){dpr=Math.min(devicePixelRatio||1,innerWidth<820?1.5:2);W=innerWidth;H=innerHeight;F=Math.min(W,H*1.3)*.95;sh=W>900?W*.14:0;
+ cv.width=W*dpr;cv.height=H*dpr;c.setTransform(dpr,0,0,dpr,0,0);cache()}
+size();build();
+addEventListener('resize',()=>{size();build();if(rm)step(0)});addEventListener('load',cache);document.addEventListener('toggle',cache,true);
+function kill(n,s){n.dead=t+s;n.rip=t}
+$('#chaos').addEventListener('click',()=>{const cs=nodes.filter(n=>n.on>.9&&alive(n));if(cs.length)kill(cs[(R()*cs.length)|0],5)});
+function hit(x,y){let b=null,bd=34;for(const n of nodes){if(n.on<.5||!n.v||!alive(n))continue;const e=Math.hypot(n.sx-x,n.sy-y);if(e<bd){bd=e;b=n}}return dim>.6?b:null}
+
+const cur=$('#cur'),cl=cur.firstChild;let cux=-99,cuy=-99;
+function setLbl(s){if(s===lbl)return;lbl=s;cur.classList.toggle('on',!!s);if(s)cl.textContent=s}
+addEventListener('pointermove',e=>{mx=e.clientX/W*2-1;my=e.clientY/H*2-1;tx=e.clientX;ty=e.clientY;
+ if(fine)document.querySelectorAll('.mag').forEach(m=>{const r=m.getBoundingClientRect(),dx=e.clientX-r.left-r.width/2,dy=e.clientY-r.top-r.height/2;m.style.transform=Math.hypot(dx,dy)<90?`translate(${dx*.25}px,${dy*.25}px)`:''})});
+document.addEventListener('pointerover',e=>{const a=e.target.closest('a,button,summary'),pj=e.target.closest('.pj');hpj=pj?[...pj.parentNode.children].indexOf(pj)+1:0;ui=!!a;if(a)setLbl(a.matches('summary')?'OPEN':a.protocol==='mailto:'?'MAIL':'OPEN')});
+addEventListener('click',e=>{if(e.target.closest('a,button,summary'))return;const n=hit(e.clientX,e.clientY);if(n)kill(n,5)});
+
+/* ───── profession scenes: the background becomes the project in view ───── */
+const IV='244,240,230',AM='242,178,94',RD='255,120,95',rg=(k,a)=>`rgba(${k},${a})`;
+function ln(x1,y1,x2,y2,k,a,w){c.strokeStyle=rg(k,a);c.lineWidth=w||1;c.beginPath();c.moveTo(x1,y1);c.lineTo(x2,y2);c.stroke()}
+function pt(x,y,r,k,a){c.fillStyle=rg(k,a);c.beginPath();c.arc(x,y,r,0,TAU);c.fill()}
+function rc(x,y,w,h,k,a,f){c.beginPath();c.roundRect?c.roundRect(x,y,w,h,3):c.rect(x,y,w,h);if(f){c.fillStyle=rg(k,a*.25);c.fill()}c.strokeStyle=rg(k,a);c.lineWidth=1;c.stroke()}
+function tl(s,x,y,k,a,al){c.font='500 10px "JetBrains Mono",ui-monospace,monospace';c.textAlign=al||'left';c.fillStyle=rg(k,a);c.fillText(s,x,y)}
+function s1(u,tt){ /* Retrivix: query fan-out to inverted-index shards, one fails */
+ const K=6,n=Math.floor(tt/3.4),f=(n*2+1)%K,ph=(tt%3.4)/3.4,fd=ph>.2&&ph<.8,qx=-u*.95;let up=0;
+ tl('sharded inverted index',-u,-u*1.1,AM,.8);
+ for(let i=0;i<K;i++){const y=(i-2.5)*u*.3,x=u*.3,dd=fd&&i===f,k=dd?RD:IV;if(!dd)up++;
+  rc(x,y-u*.11,u*.62,u*.22,k,dd?.9:.55,!dd);
+  for(let j=0;j<8;j++){const h=((i*7+j*5)%4+1)*u*.028;ln(x+u*.06+j*u*.065,y+h/2,x+u*.06+j*u*.065,y-h/2,k,dd?.3:.6,1.5)}
+  tl('s'+i+(dd?' down':''),x+u*.68,y+3,k,.6);
+  if(dd){c.setLineDash([3,5]);ln(qx,0,x,y,RD,.4);c.setLineDash([])}
+  else{ln(qx,0,x,y,IV,.16);const p=(tt*.55+i*.17)%1;pt(lerp(qx,x,p),lerp(0,y,p),2.4,AM,.95)}}
+ const rp=(tt%1.6)/1.6;c.strokeStyle=rg(AM,(1-rp)*.6);c.lineWidth=1;c.beginPath();c.arc(qx,0,6+rp*u*.2,0,TAU);c.stroke();
+ pt(qx,0,5,AM,1);tl('query',qx-u*.05,u*.22,IV,.7);
+ return up+'/'+K+' shards serving, BM25 top-K'}
+function s2(u,tt){ /* Loreva: nearest-neighbour search in embedding space */
+ const a=tt*.07,ca=Math.cos(a),sa=Math.sin(a),qx=Math.cos(tt*.45)*.55*u,qy=Math.sin(tt*.33)*.5*u,pts=emb.map(p=>{const x=(p.x*ca-p.y*sa)*u,y=(p.x*sa+p.y*ca)*u;return{x,y,d:Math.hypot(x-qx,y-qy)}});
+ tl('embedding space, ANN search',-u,-u*1.1,AM,.8);
+ const near=[...pts].sort((m,n)=>m.d-n.d).slice(0,5),R5=near[4].d;
+ for(const p of pts)pt(p.x,p.y,2,IV,.5);
+ const rp=(tt%2)/2;c.strokeStyle=rg(AM,(1-rp)*.5);c.lineWidth=1;c.beginPath();c.arc(qx,qy,R5*(.3+rp*.9),0,TAU);c.stroke();
+ for(const p of near){ln(qx,qy,p.x,p.y,AM,.7);pt(p.x,p.y,3.4,AM,1)}
+ pt(qx,qy,5,IV,1);tl('query',qx+10,qy-8,IV,.8);
+ return 'top-5 of '+pts.length+' vectors retrieved'}
+function s3(u,tt){ /* VirelyxDB: write-ahead log, then B-Tree page update */
+ const T=2.4,n=Math.floor(tt/T),ph=(tt%T)/T,lf=(n*5)%9,l1=(lf/3)|0;
+ tl('B-Tree index + write-ahead log',-u,-u*1.1,AM,.8);
+ const pos=[[0,-u*.8]];for(let i=0;i<3;i++)pos.push([(i-1)*u*.75,-u*.4]);for(let i=0;i<9;i++)pos.push([(i-4)*u*.23,0]);
+ for(let i=0;i<3;i++){const o=i===l1&&ph>.2;ln(0,-u*.8,pos[1+i][0],pos[1+i][1],o?AM:IV,o?.9:.2)}
+ for(let i=0;i<9;i++){const q=pos[1+((i/3)|0)],o=i===lf&&ph>.4;ln(q[0],q[1],pos[4+i][0],pos[4+i][1],o?AM:IV,o?.9:.2)}
+ pos.forEach((p,i)=>{const o=(i===0&&ph>.2)||(i>0&&i<4&&i-1===l1&&ph>.3)||(i>3&&i-4===lf&&ph>.5),w=i<4?u*.3:u*.2;rc(p[0]-w/2,p[1]-u*.06,w,u*.12,o?AM:IV,o?1:.5,o)});
+ tl('WAL',-u,u*.48,IV,.5);
+ for(let k=Math.max(0,n-7);k<=n;k++){const x=u*.85-(tt-k*T)*u*.14,a=clamp((x+u*.7)/(u*.4));if(a<=0)continue;rc(x-u*.1,u*.55,u*.2,u*.13,k===n?AM:IV,a*(k===n?1:.6),k===n);tl('LSN '+k,x,u*.78,IV,.5*a,'center')}
+ return 'LSN '+n+' logged, then leaf page '+lf+' updated'}
+function s4(u,tt){ /* Nexus-Comply: rule checks swept across compliance frameworks */
+ const cols=['CIS','NIST 800-53','DISA STIG','ISO 27001'],rows=9,cw=u*.5,ch=u*.15,x0=-cw*2,y0=-ch*rows/2+u*.05,cyc=Math.floor(tt*.22),sc=((tt*.22)%1)*rows;let fl=0,wr=0;
+ tl('multi-vendor compliance audit',-u,-u*1.1,AM,.8);
+ cols.forEach((s,i)=>tl(s,x0+i*cw+cw/2,y0-8,IV,.55,'center'));
+ for(let i=0;i<4;i++)for(let j=0;j<rows;j++){const h=(i*7+j*13+i*j+cyc*5)%11,x=x0+i*cw+3,y=y0+j*ch+2;
+  if(j<sc){const st=h<6?0:h<9?1:2;if(st===1)wr++;if(st===2)fl++;rc(x,y,cw-6,ch-4,st===2?RD:st===1?AM:IV,st?.9:.4,st>0)}else rc(x,y,cw-6,ch-4,IV,.14)}
+ const sy=y0+sc*ch;ln(x0,sy,x0+4*cw,sy,IV,.9,1.5);
+ return fl+' violations, '+wr+' warnings found'}
+function s5(u,tt){ /* Locatrix: dead-reckoning drift, fusion correction, LoRa relay */
+ const T=5,e=a=>{const f=(a%T)/T;return f<.85?f/.85:Math.max(0,1-(f-.85)/.1)},tp=a=>[Math.cos(a*.35)*.7*u,Math.sin(a*.55)*.45*u],es=a=>{const p=tp(a),m=e(a)*u*.3,d=Math.floor(a/T)*2.1;return[p[0]+Math.cos(d)*m,p[1]+Math.sin(d)*m]};
+ tl('dead reckoning + sensor fusion',-u,-u*1.1,AM,.8);
+ let pe=null;
+ for(let k=0;k<50;k++){const a=Math.max(0,tt-k*.12),p=tp(a),q=es(a);pt(p[0],p[1],1.4,IV,(1-k/50)*.55);if(pe)ln(pe[0],pe[1],q[0],q[1],AM,(1-k/50)*.85,1.4);pe=q}
+ const p=tp(tt),q=es(tt),bx=u*.8,by=-u*.75,pp=[-u*.6+Math.cos(tt*.6)*u*.15,u*.6+Math.sin(tt*.6)*u*.1];
+ if(Math.hypot(q[0]-pp[0],q[1]-pp[1])<u*1.1){c.setLineDash([2,4]);ln(q[0],q[1],pp[0],pp[1],IV,.35);c.setLineDash([])}
+ pt(pp[0],pp[1],3,IV,.6);tl('BT peer',pp[0]+8,pp[1]+3,IV,.5);
+ c.setLineDash([2,6]);ln(q[0],q[1],bx,by,AM,.35);c.setLineDash([]);
+ const pl=(tt*.7)%1;pt(lerp(q[0],bx,pl),lerp(q[1],by,pl),2.4,AM,1);tl('LoRa',lerp(q[0],bx,.5),lerp(q[1],by,.5)-8,AM,.6);
+ c.beginPath();c.moveTo(bx,by-9);c.lineTo(bx-8,by+6);c.lineTo(bx+8,by+6);c.closePath();c.strokeStyle=rg(AM,1);c.lineWidth=1;c.stroke();tl('base',bx,by+22,IV,.6,'center');
+ c.beginPath();c.arc(p[0],p[1],8,0,TAU);c.strokeStyle=rg(IV,.8);c.stroke();tl('true',p[0]+12,p[1]-6,IV,.6);
+ pt(q[0],q[1],5,AM,1);tl('estimate',q[0]+10,q[1]+16,AM,.8);
+ return 'drift '+(e(tt)*12).toFixed(1)+' m, relayed over LoRa'}
+function s6(u,tt){ /* AI CareerVerse: skills to roles recommendation weights */
+ const SK=['python','sql','nlp','apis','ml','systems','cloud'],RL=['backend eng','ml eng','data eng','platform','security'];
+ tl('multi-signal recommendation',-u,-u*1.1,AM,.8);
+ const w=(i,j)=>.5+.5*Math.sin(tt*.35+i*1.3+j*2.1),sc=RL.map((_,j)=>SK.reduce((a,_,i)=>a+w(i,j),0));let b=0;sc.forEach((v,j)=>{if(v>sc[b])b=j});
+ SK.forEach((_,i)=>{const y=(i-3)*u*.28;RL.forEach((_,j)=>ln(-u*.55,y,u*.55,(j-2)*u*.4,j===b?AM:IV,Math.pow(w(i,j),3)*(j===b?.8:.4)))});
+ SK.forEach((s,i)=>{const y=(i-3)*u*.28;pt(-u*.55,y,3.5,IV,.9);tl(s,-u*.55-10,y+3,IV,.6,'right')});
+ RL.forEach((r,j)=>{const y=(j-2)*u*.4;pt(u*.55,y,j===b?6:3.5,j===b?AM:IV,1);tl(r,u*.55+12,y+3,j===b?AM:IV,.8)});
+ return 'top match: '+RL[b]}
+const SCN=[null,s1,s2,s3,s4,s5,s6];
+
+function step(dt){
+ const s=scrollY/H;
+ let dT=s<.9?lerp(1500,520,sm(0,.9,s)):lerp(520,2300,sm(.9,1.8,s));
+ dT=lerp(dT,1050,sm(0,1,(scrollY-(S[6]-H*1.1))/H));
+ d=rm?dT:d+(dT-d)*(1-Math.exp(-dt*4));
+ const inC=scrollY>S[1]-H*.2&&scrollY<S[6]-H*.8,mid=scrollY+H*.5;let want=0;
+ if(mid>S[2]+H*.15&&mid<S[3]-H*.1){if(hpj)want=hpj;else{let bd=1e9;pjs.forEach((v,i)=>{const e=Math.abs(v-mid);if(e<bd){bd=e;want=i+1}})}}
+ if(want)scI=want;scA=rm?(want?1:0):scA+((want?1:0)-scA)*(1-Math.exp(-dt*4));
+ const dg=inC?(want?.1:.28):1;dim=rm?dg:dim+(dg-dim)*(1-Math.exp(-dt*4));
+ yaw+=dt*(.06+boost*.7);cmx+=(mx-cmx)*(1-Math.exp(-dt*3));cmy+=(my-cmy)*(1-Math.exp(-dt*3));
+ const ya=yaw+cmx*.35,pa=.12+cmy*.2;cyw=Math.cos(ya);syw=Math.sin(ya);cp=Math.cos(pa);sp=Math.sin(pa);
+ hw=W/2+sh;hh=H/2;
+ c.globalAlpha=1;c.fillStyle='#020203';c.fillRect(0,0,W,H);
+ const g=c.createRadialGradient(hw,hh,0,hw,hh,Math.max(W,H)*.6);g.addColorStop(0,'rgba(255,248,236,.06)');g.addColorStop(1,'rgba(255,248,236,0)');c.fillStyle=g;c.fillRect(0,0,W,H);
+ /* chaos engineering: random failures that heal themselves */
+ chaos-=dt;if(chaos<0&&!rm){chaos=8+R()*5;const n=nodes[(R()*N)|0];if(n.on>.9&&alive(n))kill(n,3.5)}
+ if(!alive(nodes[leader])){elect-=dt;if(elect<=0){const cs=nodes.filter(n=>n.on>.9&&alive(n));if(cs.length){leader=nodes.indexOf(cs[(R()*cs.length)|0]);term++;nodes[leader].rip=t}elect=.8}}else elect=.8;
+ let healthy=0;
+ for(const n of nodes){n.on=rm?1:clamp((t-1-n.del)/.7);if(n.on>.9&&alive(n))healthy++;
+  const px=n.x+Math.sin(t*.4+n.ph)*14,py=n.y+Math.cos(t*.33+n.ph)*14,pz=n.z+Math.sin(t*.27+n.ph*2)*14;
+  if(P(px,py,pz)){n.sx=Q.x;n.sy=Q.y;n.k=Q.k;n.dz=Q.dz;n.px=px;n.py=py;n.pz=pz;n.v=true}else n.v=false}
+ c.lineWidth=1;
+ for(const e of edges){const a=nodes[e[0]],b=nodes[e[1]];if(!a.v||!b.v)continue;const o=Math.min(a.on,b.on);if(o<.05)continue;
+  const dead=!alive(a)||!alive(b),al=clamp(1.5-(a.dz+b.dz)/3600)*.3*o*dim;
+  c.strokeStyle=dead?`rgba(255,120,95,${al*.7})`:`rgba(236,232,223,${al})`;if(dead)c.setLineDash([4,6]);
+  c.beginPath();c.moveTo(a.sx,a.sy);c.lineTo(b.sx,b.sy);c.stroke();if(dead)c.setLineDash([])}
+ /* packets: random walk that routes around dead nodes */
+ const spd=240+boost*700;
+ for(const p of pk){
+  if(!alive(nodes[p.b])){if(alive(nodes[p.a])){const tmp=p.a;p.a=p.b;p.b=tmp;p.u=1-p.u;rr++}else Object.assign(p,mk())}
+  const A=nodes[p.a],Bn=nodes[p.b],len=Math.hypot(A.x-Bn.x,A.y-Bn.y,A.z-Bn.z)||1;p.u+=dt*spd*p.v/len;
+  if(p.u>=1){const at=p.b,prev=p.a,opts=adj[at].filter(k=>k!==prev&&alive(nodes[k]));p.a=at;p.b=opts.length?opts[(R()*opts.length)|0]:(alive(nodes[prev])?prev:adj[at][0]);p.u=0}
+  const A2=nodes[p.a],B2=nodes[p.b];if(!A2.v||!B2.v||A2.on<.5||B2.on<.5)continue;
+  const u=p.u,u2=Math.max(0,u-.06);
+  if(!P(lerp(A2.px,B2.px,u),lerp(A2.py,B2.py,u),lerp(A2.pz,B2.pz,u)))continue;
+  const q1=Q.x,q2=Q.y,k=Q.k,al=clamp(1.5-Q.dz/3200)*Math.max(dim,.5);
+  if(P(lerp(A2.px,B2.px,u2),lerp(A2.py,B2.py,u2),lerp(A2.pz,B2.pz,u2))){c.strokeStyle=`rgba(242,178,94,${al*.55})`;c.lineWidth=1.4;c.beginPath();c.moveTo(Q.x,Q.y);c.lineTo(q1,q2);c.stroke()}
+  c.fillStyle=`rgba(255,205,130,${al})`;c.beginPath();c.arc(q1,q2,Math.max(1.4,2.6*k),0,TAU);c.fill()}
+ for(const n of nodes){if(!n.v||n.on<.02)continue;
+  const al=clamp(1.5-n.dz/3200)*Math.max(dim,.4)*n.on,r=Math.max(1.6,(4+Math.sin(t*1.6+n.ph))*n.k*n.on),ok=alive(n);
+  if(ok){const gl=r*5,gr=c.createRadialGradient(n.sx,n.sy,0,n.sx,n.sy,gl);gr.addColorStop(0,`rgba(255,248,236,${.22*al})`);gr.addColorStop(1,'rgba(255,248,236,0)');c.fillStyle=gr;c.fillRect(n.sx-gl,n.sy-gl,gl*2,gl*2);
+   c.fillStyle=`rgba(244,240,230,${al})`;c.beginPath();c.arc(n.sx,n.sy,r,0,TAU);c.fill()}
+  else{c.strokeStyle=`rgba(255,120,95,${al})`;c.lineWidth=1.2;c.beginPath();c.arc(n.sx,n.sy,r*1.5,0,TAU);c.moveTo(n.sx-r*.7,n.sy-r*.7);c.lineTo(n.sx+r*.7,n.sy+r*.7);c.moveTo(n.sx+r*.7,n.sy-r*.7);c.lineTo(n.sx-r*.7,n.sy+r*.7);c.stroke()}
+  if(n===nodes[leader]&&ok&&n.on>.9){c.strokeStyle=rg(AM,.9*al);c.lineWidth=1.2;c.beginPath();c.arc(n.sx,n.sy,r*2.8,0,TAU);c.stroke();if(al>.5)tl('leader',n.sx+r*3.2,n.sy+3,AM,.8)}
+  const rp=t-n.rip;if(rp<1.2){c.strokeStyle=`rgba(242,178,94,${(1-rp/1.2)*.7*al})`;c.lineWidth=1;c.beginPath();c.arc(n.sx,n.sy,r*2+rp*70*n.k,0,TAU);c.stroke()}}
+ if(hov&&hov.v&&alive(hov)){c.strokeStyle='rgba(255,255,255,.7)';c.lineWidth=1;c.beginPath();c.arc(hov.sx,hov.sy,16,0,TAU);c.stroke()}
+
+ curStat='';
+ if(scA>.01&&SCN[scI]){const uu=W>900?Math.min(W*.2,H*.4):Math.min(W*.4,H*.27);c.save();c.translate(W>900?W*.77:W/2,H*.5);c.globalAlpha=scA*(W>900?1:.55);curStat=SCN[scI](uu,t);c.restore()}
+ return healthy}
+
+/* ───── page choreography ───── */
+const hin=$('#hin'),bar=$('#bar'),stEl=$('#st'),hl=$('#hl'),NM=['HOME','ABOUT','WORK','STACK','APPROACH','PROFILE','CONTACT'];
+let lastSt='';
+function dom(healthy){
+ const y=scrollY,doc=Math.max(1,document.documentElement.scrollHeight-H),pr=clamp(y/doc),s=clamp(y/H);
+ if(!rm){hin.style.transform=`rotateY(${mx*3}deg) rotateX(${-my*2}deg) translateZ(${-s*500}px)`;hin.style.opacity=clamp(1.2-s*1.6)}
+ let n=0;S.forEach((v,i)=>{if(v<=y+H*.5)n=i});
+ const txt=`0${n+1} ${NM[n]} ${String(Math.round(pr*100)).padStart(3,'0')}%`;if(txt!==lastSt){stEl.textContent=lastSt=txt}
+ bar.style.transform=`scaleX(${pr})`;
+ if(t-hudT>.25||rm){hudT=t;hl.textContent=scA>.5&&curStat?curStat:`${healthy}/${N} nodes healthy, term ${term}${rr?`, ${rr} rerouted`:''}`}}
+
+function frame(now){
+ requestAnimationFrame(frame);if(document.hidden){last=0;return}
+ const dt=last?Math.min((now-last)/1000,.05):.016;last=now;t+=dt;
+ const v=Math.abs(scrollY-tick)/Math.max(dt,.001);tick=scrollY;const tg=clamp(v/2600);boost+=(tg-boost)*(1-Math.exp(-dt*(tg>boost?10:1.5)));
+ hov=fine&&!ui?hit(tx,ty):null;
+ dom(step(dt));
+ setLbl(ui?lbl:(hov?'FAIL NODE':''));
+ if(fine){cux+=(tx-cux)*.22;cuy+=(ty-cuy)*.22;cur.style.transform=`translate(${cux}px,${cuy}px)`}}
+if(rm){dom(step(0));addEventListener('scroll',()=>dom(step(0)),{passive:true})}else requestAnimationFrame(frame);
+})();
+</script>
+</body>
+</html>
